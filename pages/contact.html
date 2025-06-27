@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Tomorrowland</title>
+    <link rel="stylesheet" href="../style/global.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>🎵 TOMORROWLAND</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="about.html" class="nav-link">Sobre</a></li>
+                <li><a href="lineup.html" class="nav-link">Lineup</a></li>
+                <li><a href="contact.html" class="nav-link active">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <div class="container">
+            <section class="contact-hero">
+                <h1 class="page-title">Entre em Contato</h1>
+                <p class="page-subtitle">Tire suas dúvidas sobre o Tomorrowland</p>
+            </section>
+
+            <div class="contact-content">
+                <!-- Formulário de Contato -->
+                <section class="contact-form-section">
+                    <h2>Envie sua Mensagem</h2>
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" required>
+                            <span class="error-message" id="nomeError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assunto">Assunto *</label>
+                            <select id="assunto" name="assunto" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="ingressos">Ingressos</option>
+                                <option value="acomodacao">Acomodação</option>
+                                <option value="lineup">Lineup</option>
+                                <option value="transporte">Transporte</option>
+                                <option value="acessibilidade">Acessibilidade</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                            <span class="error-message" id="assuntoError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" rows="6"
+                                placeholder="Digite sua mensagem aqui... (mínimo 20 caracteres)" required></textarea>
+                            <span class="error-message" id="mensagemError"></span>
+                            <span class="char-counter" id="charCounter">0/20 caracteres</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+
+                    <!-- Mensagem de Feedback -->
+                    <div id="feedbackMessage" class="feedback-message" style="display: none;"></div>
+                </section>
+
+                <!-- Informações de Contato -->
+                <aside class="contact-info">
+                    <h2>Outras Formas de Contato</h2>
+
+                    <div class="contact-item">
+                        <h3>📧 E-mail</h3>
+                        <p>info@tomorrowland.com</p>
+                        <p>tickets@tomorrowland.com</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>📱 Telefone</h3>
+                        <p>+32 3 213 5466</p>
+                        <p>Atendimento: Seg-Sex 9h às 18h</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>📍 Endereço</h3>
+                        <p>ID&T Belgium</p>
+                        <p>Schommelei 6</p>
+                        <p>2850 Boom, Bélgica</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>🌐 Redes Sociais</h3>
+                        <p>@tomorrowland</p>
+                        <p>Facebook | Instagram | Twitter</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>❓ FAQ</h3>
+                        <p>Confira nossas perguntas frequentes para respostas rápidas sobre ingressos, acomodação e
+                            muito mais.</p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tomorrowland</h3>
+                    <p>O festival de música eletrônica mais mágico do mundo.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="about.html">Sobre</a></li>
+                        <li><a href="lineup.html">Lineup</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📧 info@tomorrowland.com</p>
+                    <p>📱 +32 3 213 5466</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tomorrowland. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+
+</html>
